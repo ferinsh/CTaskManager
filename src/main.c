@@ -1173,6 +1173,11 @@ int WINAPI WinMain(
             IDC_ARROW
         );
 
+    wc.hIcon = LoadIconA(
+        hInstance,
+        "IDI_APP_ICON"
+    );
+    
     wc.hbrBackground =
         (HBRUSH)(COLOR_WINDOW + 1);
 
